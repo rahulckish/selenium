@@ -1,4 +1,4 @@
-package come.sele;
+package com.sele.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package come.sele;
+package com.sele.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class GoogleTest {
 
@@ -16,12 +17,13 @@ public class GoogleTest {
     public void verifyGoogleTitle() {
 
         // Setup ChromeDriver automatically
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
 
         WebDriver driver = new ChromeDriver();
 
         // Explicit wait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         try {
             System.out.println("Launching browser...");

@@ -1,4 +1,4 @@
-package come.sele;
+package com.sele.api;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -22,7 +22,7 @@ public class APITest {
                 .when()
                     .get("/users/1")
                 .then()
-                    .assertThat()
+                    .assertThat().log().all()
                     .statusCode(200)
                     .time(lessThan(2000L))   // performance check
                     .body("id", equalTo(1))

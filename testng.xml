@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test name="Unit Tests">
+
+<suite name="DeltaSuite">
+    <test name="DeltaTest">
         <classes>
-            <class name="come.sele.AppTest"/>
+            <class name="com.sele.tests.DeltaTest"/>
         </classes>
     </test>
 </suite>

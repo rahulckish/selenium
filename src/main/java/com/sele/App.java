@@ -1,4 +1,4 @@
-package come.sele;
+package com.sele;
 
 /**
  * Hello world!
